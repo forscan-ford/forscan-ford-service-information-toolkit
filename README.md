@@ -20,8 +20,6 @@ This repository ships tooling only. It does not include Ford service information
 
 Generated artifacts such as `coverage.json`, `catalog.json`, `inventory.json`, `v1_names.json`, decoded `content/` trees, and static HTML pages remain local outputs. They stay out of Git and should never be published unless you have explicit rights to do so.
 
-![FORScan Ford local browser concept](logo.png)
-
 ---
 
 ## Feature Highlights for Ford Workshop Use
@@ -150,8 +148,6 @@ The wiring toolchain deserves special attention for **FORScan Ford** users who d
 4. `verify_links.py` confirms navigation paths remain intact after link rewriting.
 
 Run `python -m pytest tests/test_fix_svg.py` and `tests/test_wiring_index.py` before you trust a refreshed site on a customer vehicle.
-
-![Workshop reference workflow](logo.png)
 
 ---
 
