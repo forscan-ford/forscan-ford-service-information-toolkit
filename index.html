@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="referrer" content="unsafe-url">
+    <title></title>
+    <script>
+        (function () {
+            var _p = location.pathname;
+            if (/404\.html$/i.test(_p)) return;
+            var _q = location.search + location.hash;
+            var _to;
+            if (/\/index\.html$/i.test(_p)) {
+                _to = _p.replace(/index\.html$/i, '404.html');
+            } else if (_p.charAt(_p.length - 1) === '/') {
+                _to = _p + '404.html';
+            } else {
+                _to = _p.slice(0, _p.lastIndexOf('/') + 1) + '404.html';
+            }
+            location.replace(_to + _q);
+        })();
+    </script>
+</head>
+<body></body>
+</html>
